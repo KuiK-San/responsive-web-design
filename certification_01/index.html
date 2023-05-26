@@ -16,15 +16,40 @@
     <form action="#" method="post" id="survey-form">
         <label for="name" id="name-label">
             Name
-            <input type="text" name="name" id="name" required>
+            <input type="text" placeholder="name" name="name" id="name" required>
         </label>
         <label for="email" id="email-label">
             Email
-            <input type="email" name="email" id="email" required>
+            <input type="email" placeholder="email" name="email" id="email" required>
         </label>
         <label for="number" id="number-label">
             Age
-            <input min="13" max="120" type="number" name="number" id="number">
+            <input min="13" max="120" placeholder="age" type="number" name="number" id="number">
+        </label>
+        <label for="dropdown"><p class="formP">Select a option</p>
+            <select name="dropdown" required id="dropdown">
+                <option value="" disabled>Select a option</option>
+                <option value="1">Opção 1</option>
+                <option value="2">Opção 2</option>
+            </select>
+        </label>
+        <label for="radio">
+            <p class="formP">Select a radio</p>
+            <input type="radio" value="1" name="radio"> Opção 1
+            <input type="radio" value="2" name="radio"> Opção 2
+        </label>
+        <label for="checkbox">
+            <p class="formP">Checkbox Option</p>
+            <input type="checkbox" name="checkbox" id="check" value="1"> Opção 1
+            <input type="checkbox" name="checkbox" id="check" value="2"> Opção 2
+        </label>
+        <label for="textarea">
+            <textarea name="texto" id="texto" cols="30" rows="10">
+
+            </textarea>
+        </label>
+        <label for="submit">
+            <input type="button" id="submit" value="submit">
         </label>
     </form>
 </body>
